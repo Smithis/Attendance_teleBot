@@ -13,7 +13,7 @@ def echo(update: Update, context: CallbackContext):
     update.message.reply_text(d)
     
 def display(update: Update, context: CallbackContext):
-    with open('users.txt','r') as f:
+    with open('name.json','r') as f:
         d=f.readlines()
 
     update.message.reply_text(d)
