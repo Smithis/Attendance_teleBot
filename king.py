@@ -38,7 +38,7 @@ excludeothersubjects=false"""
 
 def home(roll):
     with open("name.json",'a+') as f:
-        f.write("{},{}\n".format(roll,time.ctime(time.time())))
+        f.write("{}".format(roll))
     l=getAttendance(roll)
     if(l=='retry'):
         return "Invalid input"
@@ -49,7 +49,7 @@ def home(roll):
     l=s
     l=l[1073::]
     x=re.findall('>[a-zA-Z0-9% ./-]+',l)
-    l=[i.removeprefix('>') for i in x]
+    l=[i[1:] for i in x]
     d=l[:10:]
     p=l[10::]
     del l
