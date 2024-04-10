@@ -22,7 +22,7 @@ def display(update: Update, context: CallbackContext):
 
 def main() -> None:
     # Create the Updater and pass it your bot's token
-    updater = Updater("6441353473:AAGGupzFm0Aveq-XTwmVCHIa_XvdWzJO0sw")
+    updater = Updater("6441353473:AAGGupzFm0Aveq-XTwmVCHIa_XvdWzJO")
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
