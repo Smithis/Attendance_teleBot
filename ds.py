@@ -21,22 +21,22 @@ def display(update: Update, context: CallbackContext):
     
 
 def main() -> None:
-    # Create the Updater and pass it your bot's token
+   
     updater = Updater("telgram_bot")
 
-    # Get the dispatcher to register handlers
+     
     dispatcher = updater.dispatcher
 
-    # Register command handlers
+    
     dispatcher.add_handler(CommandHandler("start", start))
     dispatcher.add_handler(CommandHandler("display", display))
-    # Register a message handler
+   
     dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, echo))
 
-    # Start the Bot
+    
     updater.start_polling()
 
-    # Run the bot until you press Ctrl-C
+   
     updater.idle()
 
 if __name__ == '__main__':
