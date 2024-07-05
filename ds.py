@@ -22,7 +22,7 @@ def display(update: Update, context: CallbackContext):
 
 def main() -> None:
     # Create the Updater and pass it your bot's token
-    updater = Updater("6441353473:AAGGupzFm0Aveq-XTwmVCHIa_XvdWzJO")
+    updater = Updater("telgram_bot")
 
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
